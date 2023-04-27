@@ -1,10 +1,3 @@
-/**
-* Template Name: Hidayah
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/hidayah-free-simple-html-template-for-corporate/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
@@ -162,13 +155,6 @@
   });
 
   /**
-   * Initiate glightbox 
-   */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
-
-  /**
    * Skills animation
    */
   let skilsContent = select('.skills-content');
@@ -210,13 +196,6 @@
       }, true);
     }
 
-  });
-
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
   });
 
   /**
