@@ -1100,6 +1100,9 @@ span.noestamosTitle {
   .formBlock {
     text-align: inherit !important;
   }
+  .form-group.row.form2 {
+    margin-top: -40px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
