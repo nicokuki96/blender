@@ -1091,23 +1091,21 @@ span.noestamosTitle {
   .blockLogo {
     display: flex;
   }
+  div#mc_embed_signup {
+    margin-top: 77px;
+  }
+  input#mc-embedded-subscribe {
+    display: block !important;
+  }
+  .formBlock {
+    text-align: inherit !important;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   #hero .btn-get-started{
     font-size: 16px;
   }
-}
-
-input.inputSemas::placeholder{
-  font-family: "SAYesenin", sans-serif;
-  font-size: 24px;
-  color: #000;
-  text-transform: uppercase;
-}
-
-input.inputSemas:focus{
-  outline: none;
 }
 
 img.img-fluid.imgLogo {
@@ -1123,4 +1121,25 @@ video#myVideo {
 
 .btnSemas{
   z-index: 9;
+}
+
+input#mc-embedded-subscribe {
+  background-color: transparent;
+  margin-top: 20px;
+}
+
+input#mce-EMAIL::placeholder {
+  font-family: "SAYesenin", sans-serif;
+  font-size: 24px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+input.inputSemas:focus{
+  outline: none;
+}
+
+.formBlock{
+  width: 350px;
+  margin: 0 auto;
 }
