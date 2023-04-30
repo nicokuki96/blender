@@ -40,7 +40,7 @@
 
 
 body {
-  font-family: "drukTextWide-bold", sans-serif;
+  font-family: "drukTextWide-medium", sans-serif;
   color: #444444;
 }
 
@@ -918,29 +918,18 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: "futura-condensedLight", sans-serif;
   color: #fff;
 }
 
 #footer .footer-top .social-links a {
-  font-size: 16px;
-  display: inline-block;
-  background: #394047;
+  font-family: "futura-condensedLight", sans-serif;
+  text-transform: uppercase;
+  font-size: 25px;
   color: #fff;
-  line-height: 1;
-  padding: 10px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .footer-top .social-links a:hover {
-  background: #91f2ea;
-  color: #000;
-  text-decoration: none;
+  margin-top: 15px;
+  display: block;
+  letter-spacing: 0.5px;
 }
 
 #footer .footer-top h4 {
@@ -999,7 +988,7 @@ section {
 }
 
 #footer .copyright {
-  font-family: "futura-condensedLight";
+  font-family: "futura-condensedLight", sans-serif;
   font-size: 18px;
   text-align: right;
   padding-top: 30px;
@@ -1103,11 +1092,36 @@ span.noestamosTitle {
   .form-group.row.form2 {
     margin-top: -40px;
   }
+  input#mce-EMAIL {
+    width: 270px;
+  }
+  p.acairia {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 23px !important;
+    width: 461px;
+    display: block;
+    margin: 0 auto;
+  }
+  #myVideoMobile{
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {
   #hero .btn-get-started{
     font-size: 16px;
+  }
+
+  p.acairia {
+    font-size: 20px !important;
+  }
+
+  input#mce-EMAIL {
+    width: 240px;
+  }
+  #myVideo{
+    display: none;
   }
 }
 
@@ -1116,6 +1130,13 @@ img.img-fluid.imgLogo {
 }
 
 video#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+video#myVideoMobile {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
@@ -1145,4 +1166,17 @@ input.inputSemas:focus{
 .formBlock{
   width: 350px;
   margin: 0 auto;
+}
+
+a.instagram:before {
+  position: absolute;
+  content: '';
+  height: 0.5px;
+  margin: 34px 2px;
+  width: 145px;
+  background-color: #fff !important;
+}
+
+.noestamos{
+  width: 100%;
 }
