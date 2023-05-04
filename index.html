@@ -13,9 +13,6 @@
   <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +56,7 @@
           Inicio
         </div>
         <!-- Slide 1 -->
-        <div class="carousel-item active">
+        <div class="carousel-item active formSlide">
           <div class="carousel-container">
             <div class="container formBlock">
                 <div class="form-group row">
@@ -76,7 +73,7 @@
                         <form action="https://gmail.us17.list-manage.com/subscribe/post?u=00738f355a11528b6ec61c005&amp;id=76365dbe43&amp;f_id=002557e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="animated fadeInUp formHome validate" target="_blank" novalidate>
                           <div id="mc_embed_signup_scroll">
                             <div class="mc-field-group">
-                              <input type="email" placeholder="Vos que estás apurado" value="" name="EMAIL" class="required email inputSemas" id="mce-EMAIL" required>
+                              <input type="email" placeholder="Vos que estás apurado" value="" name="EMAIL" class="required email inputSemas" id="mce-EMAIL" required data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Ingrese su correo electr&oacute;nico">
                               <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
                             </div>
                             <div id="mce-responses" class="clear">
@@ -95,7 +92,7 @@
                   <!--End mc_embed_signup-->
                   </div>
                 </div>
-                <!--<button href="#about" type="submit" id="submit-form" class="btn-get-started animated fadeInUp scrollto semas">Se mas pillo</button>-->
+                <!--<button href="#about" type="submit" id="submit-form" class="btn-get-started animated fadeInUp scrollto semas" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">Se mas pillo</button>-->
             </div>
           </div>
         </div>
@@ -103,14 +100,11 @@
         <!-- Slide 2 -->
         <div class="carousel-item slideVideo">
           <div class="carousel-container">
-            <video autoplay muted loop id="myVideoMobile">
-              <source src="assets/img/short.mp4" type="video/mp4">
-            </video>
-            <video autoplay muted loop id="myVideo">
-              <source src="assets/img/video.mp4" type="video/mp4">
+            <video autoplay playsinline muted loop id="myVideo">
+              <source type="video/mp4">
             </video>
             <div class="container btnSemas">
-              <a target="_blank" href="https://www.youtube.com/watch?v=92ykd5WiS4Q" class="btn-get-started animated fadeInUp scrollto semas">Se mas feliz</a>
+              <a target="_blank" href="https://www.youtube.com/watch?v=92ykd5WiS4Q" class="btn-get-started animated fadeInUp scrollto semas btnbgvideo">Se mas feliz</a>
             </div>
           </div>
         </div>
@@ -132,11 +126,11 @@
     <!-- ======= Cta Section ======= -->
     <section id="team" class="cta">
       <img src="assets/img/noestamos.png" class="noestamos" alt="no estamos muy seguros">
-      <!--<div class="container">
+      <div class="container">
         <div class="overlay top left quienes">
           ¿Quienes somos?
         </div>
-        <div class="container">
+        <!--<div class="container">
           <span class="noestamosTitle">No estamos muy seguros</span>
         </div>
       </div>-->
@@ -179,7 +173,6 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

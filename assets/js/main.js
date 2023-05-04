@@ -204,6 +204,24 @@
   new PureCounter();
 })()
 
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+const cargarVideo = () => {
+  const esMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  const video = document.getElementById("myVideo");
+  // Cargar el video en dispositivos no móviles
+  video.src = esMobile ? "assets/img/short.mp4" : "assets/img/video.mp4";
+  video.load();
+  video.play();
+}
+
+
+window.onload = (event) => {
+  cargarVideo();
+};
+
+
 
 
 

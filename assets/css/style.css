@@ -417,9 +417,17 @@ a.nav-link.scrollto.middle {
 #hero {
   width: 100%;
   height: 100vh;
-  background-color: rgba(34, 39, 43, 0.8);
   overflow: hidden;
   position: relative;
+}
+
+.formSlide{
+  background-color: #fee300;
+}
+section#hero {
+  background-color: #fee300;
+}
+.slideVideo{
   background-color: #fee300;
 }
 
@@ -443,7 +451,7 @@ a.nav-link.scrollto.middle {
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 70px;
+  top: 25px;
   left: 50px;
   right: 50px;
 }
@@ -535,6 +543,7 @@ a.nav-link.scrollto.middle {
   border-radius: 10px;
   box-shadow: 2px 2px 2px #000;
   text-transform: uppercase;
+  margin-top: -70px;
 }
 
 a.btn-get-started.animated.fadeInUp.scrollto.semas {
@@ -1017,6 +1026,7 @@ input.inputSemas {
   top: 0px;
   left: 0px;
   font-family: "drukwide-heavy", sans-serif;
+  z-index: 2;
 }
 
 .overlay.inicio {
@@ -1069,10 +1079,7 @@ span.noestamosTitle {
   .cta {
     height: 100vh;
   }
-  form.formHome {
-    width: 350px;
-    margin: 0 auto;
-  }
+
   label.col-xs-12.col-lg-2.col-form-label.futura {
     display: flex;
     align-items: center;
@@ -1080,9 +1087,7 @@ span.noestamosTitle {
   .blockLogo {
     display: flex;
   }
-  div#mc_embed_signup {
-    margin-top: 77px;
-  }
+
   input#mc-embedded-subscribe {
     display: block !important;
   }
@@ -1090,7 +1095,7 @@ span.noestamosTitle {
     text-align: inherit !important;
   }
   .form-group.row.form2 {
-    margin-top: -40px;
+    margin-top: 15px;
   }
   input#mce-EMAIL {
     width: 270px;
@@ -1102,9 +1107,6 @@ span.noestamosTitle {
     width: 461px;
     display: block;
     margin: 0 auto;
-  }
-  #myVideoMobile{
-    display: none;
   }
 }
 
@@ -1118,10 +1120,7 @@ span.noestamosTitle {
   }
 
   input#mce-EMAIL {
-    width: 240px;
-  }
-  #myVideo{
-    display: none;
+    width: 300px;
   }
 }
 
@@ -1149,7 +1148,6 @@ video#myVideoMobile {
 
 input#mc-embedded-subscribe {
   background-color: transparent;
-  margin-top: 20px;
 }
 
 input#mce-EMAIL::placeholder {
@@ -1179,4 +1177,24 @@ a.instagram:before {
 
 .noestamos{
   width: 100%;
+}
+
+#mc_embed_signup div.mce_inline_error {
+  font-size: 0;
+}
+
+.mce_inline_error:before {
+  content: 'Este campo es obligatorio';
+  font-size: 14px;
+}
+
+.clear{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container.btnSemas {
+  margin-top: 295px;
 }
